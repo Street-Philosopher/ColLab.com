@@ -1,0 +1,29 @@
+{
+	"_SITE_NAME": "StartHub",
+	
+	"NAVBAR_HOME": {
+	  "it": "Pagina Principale",
+	  "en": "Home Page"
+	},
+	"NAVBAR_CONTACT": {
+	  "it": "Contattaci",
+	  "en": "Contact us"
+	},
+	"NAVBAR_ABOUT": {
+	  "it": "Informazioni",
+	  "en": "About this site"
+	},
+
+	"HOME_DESCRIPTION_TITLE": {
+		"it": "Il centro per trovare e proporre idee!",
+		"en": "The place to share and find ideas!"
+	},
+	"HOME_DESCRIPTION": {
+		"it": "Su StartHub puoi ",
+		"en": ""
+	},
+	"HOME_FOOTER": {
+		"it": "",
+		"en": ""
+	}
+}
