@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <title>ColLab</title>
+</head>
+
+<!-- body of the document -->
+<body>
+    <!-- navbar DO NOT REMOVE -->
+    <div id="nav"></div>
+
+    <header id="video">
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+		
+		<!-- todo: do the image -->
+        <img>
+      
+        <!-- The header content -->
+        <div class="container h-100 banner-content">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="VCPbanner">ColLab</h1>
+              <p class="lead mb-0">The place to help your startup grow!</p>
+              <br/>
+              <button type="button" class="btn btn-outline-primary btn-lg font-weight-bold" onclick="location.href='myCashier.html'">Become a ColLaborator</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg font-weight-bold" onclick="location.href = './about.html'">Browse ColLaborators</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- bouncy arrow that so many websites have -->
+
+      <div class="arrow bounce" id="bouncyarrow" >
+        
+        <!-- that long ass thing is the code for an svg arrow its probably better to download the svg and import it here with an img tag -->
+        <!-- so in true vcp fashion I did it the hard way -->
+        <a href="#whoVCP">
+         <svg fill="#000000" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+        </a>
+      </div>
+
+
+
+      <div class="container">
+        <div class="row justify-content-around">
+          <div id="whoVCP" class="col-md-8">
+            <h2>What is ColLab?</h2>
+            <p>
+				ColLab is the place made by Italians for Italians to help startups grow!
+			</p>
+			<ul>
+				<li>Have an amazing idea but don't know how to make it into a reality? Find the help you need by <a href="#">searching ColLaborators</a> on our website!</li>
+				<li>Want to offer your skills for someone else's ideas? <a href="#">Become a ColLaborator</a>!</li>
+				<li>Interested in finding ideas by other people you can join, invest in, or offer help? <a href="#">Browse other people's startups</a>!</li>
+			</ul>
+          </div>
+          <div class="col col-md-4">
+            <img src="../image/logofull.png" alt="ColLab Logo" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="row"><br> <br></div>
+        <div class="row justify-content-around">
+          <div class="col">
+            <h2>Our vision</h2>
+            <p>
+				ColLab is not just a place for startuppers.
+				We wanted to make a place where anyone can contribute in some way: if you don't have a startup idea of your own but would love to meet new people and collaborate to a project, this is the place for you!
+				That's what this platform is for: finding projects you'd like to join and offer your help; or sharing your idea to find people that believe in it and can help you with it.
+				<br>
+				So anyone can help, because everyone has something to offer: ideas, skills, investments, or anything more you can think of!
+				<br>
+				But, at least here in Italy, a single place to join all of these factors and allow users to find what they need was lacking.
+				And that's where the idea of ColLab came from!
+			</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div id="foot"></div>
+    <!-- bootstrap js NO HTML BELOW THIS POINT SCRIPTS ONLY!!! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jquery js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom js files go here: -->
+    <script src="../scripts/inject.js"></script>
+
+</body>
+</html>

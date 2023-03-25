@@ -1,0 +1,37 @@
+{
+	"_SITE_NAME": "StartHub",
+	
+	"NAVBAR_HOME": {
+	  "it": "Pagina Principale",
+	  "en": "Home Page"
+	},
+	"NAVBAR_CONTACT": {
+	  "it": "Contattaci",
+	  "en": "Contact us"
+	},
+	"NAVBAR_ABOUT": {
+	  "it": "Informazioni",
+	  "en": "About this site"
+	},
+	"NAVBAR_BROWSE": {
+		"it": "Esplora",
+		"en": "Browse"
+	},
+	"NAVBAR_OFFER": {
+		"it": "Offri un servizio",
+		"en": "Offer a service"
+	},
+
+	"HOME_DESCRIPTION_TITLE": {
+		"it": "Il centro per trovare e proporre idee!",
+		"en": "The place to share and find ideas!"
+	},
+	"HOME_DESCRIPTION": {
+		"it": "Hai un'idea rivoluzionaria ma non sai come realizzarla? Un progetto creativo per cui hai bisogno di aiuto? Vuoi mettere le tue abilità a disposizione di altre persone? Cerchi un progetto startup a cui prendere parte? Puoi fare tutto questo e molto di più su StartHub!",
+		"en": "Do you have a revolutionary idea you don't know how to realise? A creative project you want help for? Do you want to help other people with your abilities? Are you looking for a startup project to join and help with? All this and more StartHub!"
+	},
+	"HOME_FOOTER": {
+		"it": "mio padre",
+		"en": "mio fratello"
+	}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <title>Document</title>
+</head>
+
+<!-- body of the document -->
+<body>
+    <!-- header DO NOT REMOVE -->
+    <div id="nav"></div>
+
+    <!-- main content -->
+    <!-- Carousel for the page -->
+    <div class="coverlay"> <!-- overlay for the carousel shame it doesn't work :( -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-img" data-interval="3000">
+            <img class="d-block w-100" src="../image/mycashierhome.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-primary">
+                <h1 class="VCPbanner">Our First Program</h1>
+                <p>MyCashier by VCP Enterprises</p>
+              </div>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img class="d-block w-100" src="../image/compeditors.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block text-primary">
+                <h1 class="VCPbanner">Putting compeditors in their place</h1>
+                <p>We strive to be the best</p>
+              </div>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img class="d-block w-100" src="../image/wanglebangle.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block text-primary">
+                <h1 class="VCPbanner">Multiculturalism</h1>
+                <p>This is our friend Chak</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+        <!-- bouncy arrow that so many websites have -->
+        <div class="arrow bounce">
+          <!-- that long ass thins is the code for an svg arrow its probably better to download the svg and import it here with an img tag -->
+          <!-- so in true vcp fashion I did it the hard way -->
+          <a  onclick="$('.arrow').slideToggle(600); href='#MyCashier-description'">
+           <svg  id="bouncyarrow" fill="#000000" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
+          </a>
+        </div>
+
+
+    <div class="container" id="MyCashier-description">
+      <br/>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img src="../image/mycashierfull.png" alt="MyCashier" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <br/>
+          <h1 class="VCPbanner">MyCashier</h1>
+          <p>MyCashier is a program that is designed to help small businesses keep track of their sales and inventory. It is a simple program that began as a proof of concept and has grown into a full fledged program. It is designed to be easy to use and easy to understand. It is also designed to be as customizable and modifiable as per user needs. MyCashier is 100% free and open source. It is designed to be used by anyone and everyone. It is available on windows, and linux with python source code available for all other platforms. 
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="foot"></div>
+
+    <!-- bootstrap js NO HTML BELOW THIS POINT SCRIPTS ONLY!!! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jquery js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom js files go here: -->
+    <script src="../scripts/inject.js"></script>
+
+</body>
+</html>

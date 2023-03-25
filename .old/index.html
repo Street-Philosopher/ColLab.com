@@ -1,0 +1,51 @@
+<!--chatGPT master race-->
+
+<!DOCTYPE html>
+<html onload="" lang="it">
+	<head>
+		<title translation_id="_SITE_NAME">_SITE_NAME</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="home.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- important elements -->
+			<select id="language-selector">
+				<option value="it">Italiano</option>
+				<option value="en">English</option>
+			</select>
+		
+			<h1 translation_id="_SITE_NAME">_SITE_NAME</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" translation_id="NAVBAR_HOME">NAVBAR_HOME</a></li>
+					<li><a href="browse_startups.html" translation_id="NAVBAR_BROWSE">NAVBAR_ABOUT</a></li>
+					<li><a href="#" translation_id="NAVBAR_OFFER">NAVBAR_ABOUT</a></li>
+					<li><a href="#" translation_id="NAVBAR_ABOUT">NAVBAR_ABOUT</a></li>
+					<li><a href="#" translation_id="NAVBAR_CONTACT">NAVBAR_CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<h2 translation_id="HOME_DESCRIPTION_TITLE">HOME_DESCRIPTION_TITLE</h2>
+			<p translation_id="HOME_DESCRIPTION">HOME_DESCRIPTION</p>
+		</main>
+		
+		<footer>
+			<p translation_id="HOME_FOOTER">HOME_FOOTER</p>
+		</footer>
+
+		<!--scripts-->
+		<script src="translation.js"></script>
+		<script>
+		// Automatically translate the page when the language selection is changed
+		document.getElementById('language-selector').addEventListener('change', function(value) { translatepage(document.getElementById('language-selector').value) });
+		</script>
+		<script id="init-script">
+			load_translation_file()
+				.then(function(data) { translatepage("it") })
+		</script>
+	</body>
+</html>
