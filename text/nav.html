@@ -21,15 +21,22 @@
 		</ul>
 		<form class="form-inline">
 			<!--one of these will be kept based on whether we're logged in or not-->
-			<a id="log-in-button" href="../pages/account/login.html" class="btn btn-secondary my-2 my-sm-0">Log In</a>
-			<a id="account-button" href="" class="btn btn-secondary my-2 my-sm-0">My Account</a>
+			<a id="log-in-button" href="../pages/login.html" class="btn btn-secondary my-2 my-sm-0">Log In</a>
+			
+			<a id="account-button" href="" class="btn btn-secondary my-2 my-sm-0">
+				<img src="../image/userdefault.png" width="23" height="23">
+				My Account
+			</a>
+			
 			<script src="../scripts/cookies.js"></script>
 			<script>
-				if (GetCookie("username") == null) {
+				// alert(sessionStorage.getItem("logged_in"))
+				if (sessionStorage.getItem("logged_in") == null) {
 					document.getElementById("account-button").remove()
 				} else {
+					// alert("removing thing")
 					document.getElementById("log-in-button").remove()
-					document.getElementById("account-button").textContent = GetCookie("username")
+					// document.getElementById("account-button").textContent = GetCookie("username")
 				}
 			</script>
 		</form>
