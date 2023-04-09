@@ -172,15 +172,22 @@
 
 			// alert(name + "\n" + pswd)
 
-			if (authenticate_user(name, pswd) == false) {
+			res = authenticate_user(name, pswd)
+
+			if (res == false) {
 				alert("what")
 			}
 			else {
 				// alert("linking")
 				sessionStorage.setItem("logged_in", name);
+				sessionStorage.setItem("login_name", name);
+				sessionStorage.setItem("login_pass", pswd);
 				// alert(sessionStorage.getItem("logged_in"))
 				window.location.href = "main.html";
 			}
+
+			return res
+
 		}
 
 		function validateSignup() {

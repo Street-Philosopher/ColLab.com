@@ -1,5 +1,1 @@
 /start
-# /package.json
-# /package-lock.json
-/node_modules
-/authentication/key.json
