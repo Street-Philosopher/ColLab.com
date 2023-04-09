@@ -23,6 +23,18 @@
 	<div id="nav"></div>
 
 
+	<!--title-->
+	<br>
+	<br>
+	<div class="d-flex h-100 text-center align-items-center">
+		<div class="w-100 text-black">
+		  <h1 class="VCPbanner">Startups</h1>
+		  <p class="lead mb-0">Find the startup you're looking for!</p>
+
+		</div></div>
+
+
+	<!-- empty list to be filled with startups -->
 	<div class="container text-center d-flex justify-content-center mt-5">
 		<ul id="parent-list" class="list-group list-group-horizontal position-relative w-150 overflow-auto">
 
@@ -39,42 +51,37 @@
 				<div class="card-body">
 					<h5 id="card-title" class="card-title"></h5>
 					<p id="card-description" class="card-text"></p>
-					<a id="card-link" href="../index.html" class="btn btn-primary">Visit Profile</a>
+					<a id="card-link" href="../index" class="btn btn-primary">Visit Profile</a>
 				</div>
 			</div>
 		</li>
 	</template>
 
 
+	<script src="../internal/startups.js"></script>
 	<script>
 		console.log("starting the thing")
 
-		let user_list = {
-			1: { name: "ColLab", link: "#", description: "Advertise your startup and find help to make it grow!" },
-			2: { name: "Example Startup", link: "#", description: "This is an example to show how the website works." },
-			3: { name: "Another Startup", link: "#", description: "You can have as many of these startups as you want." },
-		}
+		let user_list = internal_get_startups()
 
 		template_id = "card-template"
 
 		parent_block = document.getElementById("parent-list")
 		template=document.getElementById("card-template")
 
-		console.log("loop about to start:\n\n")
-
 		for (var id in user_list) {
 
+			// get the properties
 			name = user_list[id]["name"]
-			link = user_list[id]["link"]
 			description = user_list[id]["description"]
 			
-			console.log(name, link, description)
-
+			// clone the template
 			clone = template.content.cloneNode(true)
 			clone_element = clone.querySelector("li")
 
 			console.log(typeof clone)
 
+			// change attributes and update IDs
 			clone_element.setAttribute("id", "card-" + String(id))
 
 			clone.querySelector("h5").setAttribute("id", "card-title-"+String(id))
@@ -83,9 +90,11 @@
 			clone.querySelector("p").setAttribute("id", "card-description-"+String(id))
 			clone.querySelector("p").textContent = description
 			
+			link = "./view_startup.html"
 			clone.querySelector("a").setAttribute("id", "card-link-"+String(id))
 			clone.querySelector("a").setAttribute("href", link)
 
+			// add the element in the right place
 			parent_block.appendChild(clone)
 
 		}
