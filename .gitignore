@@ -1,1 +1,5 @@
 /start
+node_modules
+firebase.json
+.firebaserc
+.firebase
